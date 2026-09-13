@@ -31,3 +31,7 @@ A partial capability can still be useful. Producing valid masks when a height ca
 Legacy environments also need care. A notebook that once ran on a particular machine is not a complete dependency specification. The container and installed-package checks help expose missing resources and version assumptions.
 
 This public case study excludes checkpoints, private imagery and operational configurations. It makes no height-accuracy claim. Its transferable lesson is how to preserve a useful research workflow while making its execution contract, prerequisites and limitations explicit.
+
+## Independent public-data demonstration
+
+[Notebook 07: shipping geoai](../../notebooks/07-shipping-geoai.ipynb) demonstrates related methods using public observations and original code. It does not reproduce this private project or its operational results.

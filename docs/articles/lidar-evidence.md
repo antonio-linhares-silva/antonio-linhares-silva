@@ -1,5 +1,7 @@
 # Reconstructing Power Lines from LiDAR Evidence
 
+[**Run the public-data notebook**](../../notebooks/10-lidar-evidence.ipynb) ? [Notebook setup](../../notebooks/README.md)
+
 [Documentation index](../README.md) · [Powerline reconstruction](../projects/powerline-reconstruction.md)
 
 A fitted curve can look convincing even when the point cloud provides little support for it. In reconstruction work, the quality of the presentation can therefore exceed the strength of the evidence. A useful pipeline must preserve the distinction between measured observations and generated geometry.

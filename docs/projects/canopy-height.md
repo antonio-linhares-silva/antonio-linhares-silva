@@ -29,3 +29,7 @@ An estimated height raster should carry its spatial reference and validity infor
 Correction and validation utilities are capabilities, not proof that an arbitrary output is accurate. A correction fitted to one area requires separate evaluation before use elsewhere.
 
 This public description excludes model caches, private evaluation datasets and performance numbers. It also avoids publishing operational preprocessing settings. The related articles explain the engineering concepts using generic diagrams. Their examples do not distribute pretrained weights or require access to company model infrastructure.
+
+## Independent public-data demonstration
+
+[Notebook 08: tree crowns height distance](../../notebooks/08-tree-crowns-height-distance.ipynb) demonstrates related methods using public observations and original code. It does not reproduce this private project or its operational results.

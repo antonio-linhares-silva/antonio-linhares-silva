@@ -31,3 +31,7 @@ A tiled workflow should preserve coverage at borders and state whether neighborh
 The public collection provides no shadow-detection benchmark and does not claim that one analytical rule works equally well across acquisition conditions. Imagery, coefficients and application-specific settings are excluded.
 
 The companion tutorials demonstrate independent raster arithmetic and validity checks. They are deliberately simpler than the private shadow workflow, allowing readers to inspect spatial preservation and packaging principles without receiving a reimplementation of company processing logic.
+
+## Independent public-data demonstration
+
+[Notebook 04: geospatial data contracts](../../notebooks/04-geospatial-data-contracts.ipynb) demonstrates related methods using public observations and original code. It does not reproduce this private project or its operational results.

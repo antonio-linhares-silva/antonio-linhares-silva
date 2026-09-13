@@ -31,3 +31,7 @@ A feature ranking belongs to a model and evaluation protocol. Correlated feature
 The public collection excludes private feature formulas, source imagery, labels, experiment budgets and benchmark results. It describes implemented controls without claiming that every possible experiment using the pipeline is scientifically valid.
 
 The [train-only preprocessing tutorial](../tutorials/train-only-preprocessing.md) offers an independent demonstration of one narrow invariant: changing held-out pixels must not change the fitted training statistics. It deliberately trains no model and reports no predictive performance.
+
+## Independent public-data demonstration
+
+[Notebook 05: multispectral experiments](../../notebooks/05-multispectral-experiments.ipynb) demonstrates related methods using public observations and original code. It does not reproduce this private project or its operational results.

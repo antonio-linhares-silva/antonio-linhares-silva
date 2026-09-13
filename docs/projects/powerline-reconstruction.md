@@ -31,3 +31,7 @@ Original attributes and coordinates should remain available for inspection. Gene
 The workflow is bounded and exploratory. It is not presented as a distributed service for arbitrarily large point clouds, a universal reconstruction method or a source of certified infrastructure geometry.
 
 This page excludes source surveys, internal fitting settings and benchmark results. The accompanying article discusses general principles of evidence, missing terrain information and independent readback. Those explanations help a reader understand the engineering without receiving operational configurations or a copy of the private implementation.
+
+## Independent public-data demonstration
+
+[Notebook 10: lidar evidence](../../notebooks/10-lidar-evidence.ipynb) demonstrates related methods using public observations and original code. It does not reproduce this private project or its operational results.

@@ -29,3 +29,7 @@ Model identity and preprocessing identity need to travel together. Loading the i
 The code has CPU/GPU-oriented interfaces, but that does not establish that every historical version imports or executes in every CPU-only environment. Compatibility should be tested for the particular package and model environment.
 
 The repository is private. This page replaces the former public-code link with an account of the technical work. It exposes no trained artifacts, private data, internal class recipes or registry endpoints. The [local MLflow tutorial](../tutorials/local-mlflow-model.md) demonstrates packaging independently, using a tiny synthetic arithmetic model and local storage.
+
+## Independent public-data demonstration
+
+[Notebook 05: multispectral experiments](../../notebooks/05-multispectral-experiments.ipynb) demonstrates related methods using public observations and original code. It does not reproduce this private project or its operational results.

@@ -1,5 +1,7 @@
 # Processing Large Rasters Within a Memory Budget
 
+[**Run the public-data notebook**](../../notebooks/02-memory-bounded-rasters.ipynb) ? [Notebook setup](../../notebooks/README.md)
+
 [Documentation index](../README.md) · [Canopy delineation](../projects/canopy-delineation.md) · [Canopy height](../projects/canopy-height.md)
 
 A pipeline can process every tile successfully and still fail when it assembles the final raster. Tiling the model input solves only one part of the memory problem. Preprocessing, prediction queues, merge buffers and vectorization can each become the largest allocation in the run.

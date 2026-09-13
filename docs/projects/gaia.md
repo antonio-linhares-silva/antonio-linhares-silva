@@ -29,3 +29,7 @@ A shared interface is useful when it makes compatibility explicit. Band count, c
 The important trade-off is how much behavior to share. Common logging and configuration reduce repetition; task-specific label semantics should remain explicit. This is the subject of the linked framework article.
 
 This page makes no accuracy or production-readiness claim. Private configurations, datasets and checkpoints are excluded. Readers can inspect the independent public tutorials for small demonstrations of related engineering principles, without needing to install GAIA or access its source.
+
+## Independent public-data demonstration
+
+[Notebook 01: reusable geoai framework](../../notebooks/01-reusable-geoai-framework.ipynb) demonstrates related methods using public observations and original code. It does not reproduce this private project or its operational results.

@@ -1,5 +1,7 @@
 # Managing Model Artifacts with MLflow
 
+[**Run the public-data notebook**](../../notebooks/06-model-artifacts-mlflow.ipynb) ? [Notebook setup](../../notebooks/README.md)
+
 [Documentation index](../README.md) · [Land Use Land Cover](../projects/land-use-land-cover.md) · [MLflow infrastructure](../projects/mlflow-infrastructure.md)
 
 A checkpoint is only one part of a usable model. An inference workflow also needs its preprocessing assumptions, expected feature order, loading code and compatible environment. Losing any of those can make a stored artifact difficult to reproduce even when the weight file itself is intact.

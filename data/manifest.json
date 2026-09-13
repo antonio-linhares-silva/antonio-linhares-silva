@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "release": "public-data-v1",
+  "packs": {
+    "satellite": {
+      "url": "https://github.com/antonio-linhares-silva/antonio-linhares-silva/releases/download/public-data-v1/satellite.zip",
+      "sha256": "32f74f185ee950275ef7f07ac4c38c945886c3018cc848168a6e60353353640c",
+      "bytes": 4337467,
+      "attribution": "Contains modified Copernicus Sentinel data (2020, 2021). ESA WorldCover 2021 v200, CC BY 4.0, ESA WorldCover consortium.",
+      "files": {
+        "after-scl.tif": "59f798dc7593abe61c5215c172781878ebe1c35d5fa802d9a0e2bebee5b510d5",
+        "after.tif": "9792bf6ba9a3d793313e05ee3df42edd32108b2387354ce2619478f4f2a99c0f",
+        "ATTRIBUTION.json": "64c8bf0eb66496208016076ed8524abc818f8e7d28dbfab637d8e25a59fc79e9",
+        "before-scl.tif": "6011a09e68eb58574ba63ec9caa08545db8aef3048bc692c0fafee889cc61da2",
+        "before.tif": "00bb73e5fe060673d33686f760ef3455b7826af8667b87738a7861d6dd3f3641",
+        "provenance.json": "c411ce9757effb2c025568603752a3c339c549e9ca0b4b56a9684029b2a87107",
+        "swir20m.tif": "fad4e61e15aee930d9d9f843c3e90e952ba3ce3fca35ce885f5e5606e87788c7",
+        "worldcover.tif": "4f93b25fc11e11755ee159acaeadc2c24457d1a2a9b94a21b25122cbb4b85292"
+      }
+    },
+    "eurosat": {
+      "url": "https://github.com/antonio-linhares-silva/antonio-linhares-silva/releases/download/public-data-v1/eurosat.zip",
+      "sha256": "0ddaadb9f1b3f16c7bc7a23f18c16474d53886a78a1890be5a08b40e9e658638",
+      "bytes": 200268418,
+      "attribution": "EuroSAT by Patrick Helber et al., MIT, contains Copernicus Sentinel data. Spatial splits by TorchGeo contributors, MIT.",
+      "files": {
+        "ATTRIBUTION.json": "288613b58ba132cc3a7fe74eb46c26442f32f7897ff5d6389238d39c591438d3",
+        "chips.npz": "851e1093d9ccfd25cac9d787b9067711d541c0820237b97ecbb856704588973a",
+        "footprints.gpkg": "8befbed2b0992db8d1dc7d2c942eaa4b8390cc6fe91e5b16da4c7b917df83cc6",
+        "licenses/EuroSAT-MIT.txt": "b52f38929ffafe4cdc7bd842ab7743a92cecdf87385a07bb5f972ed17ca3d7f7",
+        "licenses/TorchGeo-MIT.txt": "fb1647541e6007fc18245b00a0de247e61d55b792d148e96d5294b9661820b7f",
+        "provenance.json": "81507274d9afc1f81a21c9befbdbe3d80341e6670cec3d801f6dae1232db4011",
+        "samples.csv": "d84053c9cc1ca11fadd42bcb9fbfb4a872f65810e574f7bf9208fbbb8dcfc99e"
+      }
+    },
+    "ahn": {
+      "url": "https://github.com/antonio-linhares-silva/antonio-linhares-silva/releases/download/public-data-v1/ahn.zip",
+      "sha256": "df44a51e345f8eafc641b07f290b49598cb573bf4d655dcefc9488a20666031c",
+      "bytes": 31329090,
+      "attribution": "AHN4, CC0 1.0. Orthophoto: Beeldmateriaal Nederland / beeldmateriaal.nl, 2022, CC BY 4.0.",
+      "files": {
+        "ATTRIBUTION.json": "7d44d05c8ecc857001f48aeedd6cfc24646f6cdd2247d8ad157aef3cc0f22229",
+        "corridor-dsm.tif": "a57e6b00579b458faf8fdec3585b76e4faef8e1b97ca5b8f59e7c215ec7f382f",
+        "corridor-dtm.tif": "442fc153af663cfa378a0af5cc79c8fd9c0e4f10722ec41d958e57e8be086484",
+        "corridor.laz": "2ca293771b1a6df383e555e89c4c74a1dea1ac4b7e3abe3618ec0f20b70b3d7c",
+        "provenance.json": "395675481c176dfd81bf30051abe36a0b0c235c3f14eda3210a9bd32d947ee41",
+        "trees-dsm.tif": "d73de238003416c0412b501f8bad800c637b7d47e24e84a9fe87db3bbff99199",
+        "trees-dtm.tif": "f7dcf641182a93580b40e7163afd4f9955f4562201113978875af646ca6a4f29",
+        "trees-rgb.tif": "c578dc15d1439857316655326601501c2d02254ec4ec481df5e6be5da8c72f32",
+        "trees.laz": "5f6889884ee071e17d63fdab485fea17cd3a7f7c5fcc34accfd1fd724e071cd6"
+      }
+    }
+  }
+}

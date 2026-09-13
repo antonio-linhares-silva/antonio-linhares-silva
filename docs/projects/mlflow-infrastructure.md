@@ -31,3 +31,7 @@ Metadata and model artifacts also have different storage roles. A recovery exerc
 The public collection uses a local SQLite database and local files in its MLflow tutorial. That example demonstrates the separation of responsibilities without reproducing the cloud deployment or requiring a paid account.
 
 This case study makes no uptime, security-certification or disaster-recovery guarantee. It omits operational topology, account settings and deployment commands. The relevant portfolio evidence is the use of declarative infrastructure, explicit persistent storage and reproducible service setup to support model-management workflows.
+
+## Independent public-data demonstration
+
+[Notebook 06: model artifacts mlflow](../../notebooks/06-model-artifacts-mlflow.ipynb) demonstrates related methods using public observations and original code. It does not reproduce this private project or its operational results.

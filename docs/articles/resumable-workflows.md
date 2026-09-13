@@ -1,5 +1,7 @@
 # Resumable Geospatial Workflows
 
+[**Run the public-data notebook**](../../notebooks/03-resumable-workflows.ipynb) ? [Notebook setup](../../notebooks/README.md)
+
 [Documentation index](../README.md) · [Kestra workflows](../projects/kestra-workflows.md) · [Canopy delineation](../projects/canopy-delineation.md)
 
 When a long batch fails near the end, restarting from the beginning wastes time and can create duplicate products. Skipping every output that already exists has the opposite problem: partial or obsolete results can be mistaken for completed work. Resuming correctly requires evidence about both the computation and its output.

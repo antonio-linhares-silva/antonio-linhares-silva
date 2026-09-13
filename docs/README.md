@@ -2,13 +2,19 @@
 
 [Profile](../README.md)
 
-Technical articles, runnable examples, and project case studies by António Silva. The collection focuses on the engineering behind geospatial machine learning: data contracts, bounded processing, experiment design, model packaging, and recoverable execution.
+Executed public-data notebooks, technical articles, runnable examples, and project case studies by António Silva. The collection focuses on the engineering behind geospatial machine learning: data contracts, bounded processing, experiment design, model packaging, and recoverable execution.
 
 ## Reading paths
 
 - **Getting to know my work:** start with [GAIA](projects/gaia.md), [Land Use & Land Cover](projects/land-use-land-cover.md), and [canopy delineation](projects/canopy-delineation.md).
 - **Python and MLOps:** read about [reusable frameworks](articles/reusable-geoai-framework.md), [model artifacts](articles/model-artifacts-mlflow.md), [delivery](articles/shipping-geoai.md), and [recovery](articles/resumable-workflows.md).
 - **Geospatial methods:** explore [data contracts](articles/geospatial-data-contracts.md), [multispectral experiments](articles/multispectral-experiments.md), [tree metrics](articles/tree-crowns-height-distance.md), [change analysis](articles/vegetation-change.md), and [LiDAR evidence](articles/lidar-evidence.md).
+
+## Public-data notebooks
+
+[**Explore the ten executed notebooks**](../notebooks/README.md). Each article has a companion notebook with public data, visible plots and tables, reusable Python code, and explicit verification. The collection covers a short EuroSAT fine-tune, multispectral baselines, Sentinel-2 rasters and change, MLflow, wheel installation, tree detection and LiDAR reconstruction.
+
+See [data sources and licences](DATA_SOURCES.md) and [execution evidence](notebook-validation.json). The notebook index includes CPU/CUDA setup, downloads and Run All instructions.
 
 ## Technical articles
 
@@ -37,7 +43,7 @@ uv run --frozen python -m docs.examples.local_mlflow
 uv run --frozen python -m docs.examples.resume_batch
 ~~~
 
-All data is synthetic. Generated files stay under the ignored `outputs/` directory. The MLflow tutorial uses a local database and local artifact storage; no remote tracking service is required. Installing dependencies requires internet access; running the examples afterward uses local resources.
+These four command-line tutorials use synthetic data. The notebooks above use public observations. Generated files stay under the ignored `outputs/` directory. The MLflow tutorial uses a local database and local artifact storage; no remote tracking service is required. Installing dependencies requires internet access; running the examples afterward uses local resources.
 
 | Tutorial | Observable result |
 | --- | --- |

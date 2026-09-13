@@ -1,5 +1,7 @@
 # Interpreting Vegetation Change
 
+[**Run the public-data notebook**](../../notebooks/09-vegetation-change.ipynb) ? [Notebook setup](../../notebooks/README.md)
+
 [Documentation index](../README.md) · [Forest cut classifier](../projects/forest-cut-classifier.md) · [Canopy delineation](../projects/canopy-delineation.md)
 
 Subtracting two rasters produces a difference. Interpreting that difference as vegetation change requires more evidence. Acquisition conditions, coverage, alignment and preprocessing can all change the measurements without corresponding to the event a user wants to detect.

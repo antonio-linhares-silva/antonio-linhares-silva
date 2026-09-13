@@ -1,5 +1,7 @@
 # Designing a Reusable GeoAI Framework
 
+[**Run the public-data notebook**](../../notebooks/01-reusable-geoai-framework.ipynb) ? [Notebook setup](../../notebooks/README.md)
+
 [Documentation index](../README.md) · [GAIA project](../projects/gaia.md) · [Land Use Land Cover](../projects/land-use-land-cover.md)
 
 A reusable GeoAI framework earns its value when a second task can reuse the engineering without inheriting the first task's assumptions. A tree-crown detector and a land-cover classifier may both read satellite imagery, yet they disagree about labels, output shapes, batching and evaluation. Treating those differences as configuration alone usually moves complexity into invisible conventions.

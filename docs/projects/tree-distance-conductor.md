@@ -33,3 +33,7 @@ Failures of support should remain visible. Missing conductor coverage, an unreso
 The public description excludes operational clearance rules, asset locations and private measurements. It makes no safety-certification or universal accuracy claim. The linked article explains the interpretation of these geometric quantities and the difference between testing an integration with synthetic fixtures and validating a real-world measurement process.
 
 This project illustrates a recurring software-engineering task in GeoAI: preserving meaning while composing independently useful components into a workflow that another person can operate.
+
+## Independent public-data demonstration
+
+[Notebook 10: lidar evidence](../../notebooks/10-lidar-evidence.ipynb) demonstrates related methods using public observations and original code. It does not reproduce this private project or its operational results.

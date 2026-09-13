@@ -1,0 +1,102 @@
+{
+  "date": "2026-09-13",
+  "platform": "Windows x86_64",
+  "python": "3.12.14",
+  "package_version": "2.0.0",
+  "torch": "2.14.0",
+  "cuda": "13.0",
+  "gpu": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "notebooks": [
+    {
+      "notebook": "01-reusable-geoai-framework.ipynb",
+      "device": "cuda",
+      "seconds": 14.85,
+      "code_cells": 7,
+      "png_outputs": 4
+    },
+    {
+      "notebook": "02-memory-bounded-rasters.ipynb",
+      "device": "cpu",
+      "seconds": 4.67,
+      "code_cells": 4,
+      "png_outputs": 1
+    },
+    {
+      "notebook": "03-resumable-workflows.ipynb",
+      "device": "cpu",
+      "seconds": 2.09,
+      "code_cells": 4,
+      "png_outputs": 1
+    },
+    {
+      "notebook": "04-geospatial-data-contracts.ipynb",
+      "device": "cpu",
+      "seconds": 2.17,
+      "code_cells": 5,
+      "png_outputs": 1
+    },
+    {
+      "notebook": "05-multispectral-experiments.ipynb",
+      "device": "cpu",
+      "seconds": 23.52,
+      "code_cells": 6,
+      "png_outputs": 2
+    },
+    {
+      "notebook": "06-model-artifacts-mlflow.ipynb",
+      "device": "cpu",
+      "seconds": 35.06,
+      "code_cells": 5,
+      "png_outputs": 1
+    },
+    {
+      "notebook": "07-shipping-geoai.ipynb",
+      "device": "cpu",
+      "seconds": 25.87,
+      "code_cells": 4,
+      "png_outputs": 1
+    },
+    {
+      "notebook": "08-tree-crowns-height-distance.ipynb",
+      "device": "cuda",
+      "seconds": 15.84,
+      "code_cells": 5,
+      "png_outputs": 2
+    },
+    {
+      "notebook": "09-vegetation-change.ipynb",
+      "device": "cpu",
+      "seconds": 3.13,
+      "code_cells": 5,
+      "png_outputs": 3
+    },
+    {
+      "notebook": "10-lidar-evidence.ipynb",
+      "device": "cpu",
+      "seconds": 3.55,
+      "code_cells": 6,
+      "png_outputs": 2
+    }
+  ],
+  "additional_cpu_runs": [
+    {
+      "notebook": "01-reusable-geoai-framework.ipynb",
+      "seconds": 124.83,
+      "torch": "2.14.0+cpu",
+      "installation": "separate environment; frozen cpu extra; installed wheel",
+      "completed": true
+    },
+    {
+      "notebook": "08-tree-crowns-height-distance.ipynb",
+      "seconds": 40.88,
+      "torch": "2.14.0+cpu",
+      "installation": "separate environment; frozen cpu extra; installed wheel",
+      "completed": true
+    }
+  ],
+  "satellite_rebuild": {
+    "platform": "Windows",
+    "source_method": "cached source COGs",
+    "matches_release_input_files": 7
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "satellite": "64x64 pixel crop from satellite pack, pixel offset (64,64)",
+  "lidar": "Every tenth class-14 observation from AHN corridor pack; coordinates unchanged",
+  "source_manifest": "../manifest.json",
+  "license_documentation": "../../docs/DATA_SOURCES.md",
+  "sha256": {
+    "before-scl.tif": "5be1df410f0372c60fc15478afe5d607308e5afab0696f4b1e563007d709fdff",
+    "before.tif": "624a4949a26568f70c63c24611a878efd0a7fa5749e1fdf0b0c4cba3e518e86b",
+    "conductors.laz": "716753b439454dcfb647a1334c9afd713deb62957b1a996555c75ee4b2b8681b"
+  }
+}

@@ -10,7 +10,7 @@ I enjoy connecting applied machine learning with Python engineering: moving expe
 
 [**GeoAI Engineering Notes →**](docs/README.md)
 
-A collection of **10 technical articles, 4 runnable tutorials, and 15 project case studies**. The articles explain engineering decisions; the tutorials use original synthetic data; the case studies describe my contributions to collaborative projects.
+A collection of **10 executed public-data notebooks, 10 technical articles, 4 runnable tutorials, and 15 project case studies**. Explore real Sentinel-2, EuroSAT and AHN data through visible experiments, maps, model outputs and engineering checks. The case studies describe my contributions to collaborative projects.
 
 | Start here | What it covers |
 | --- | --- |
@@ -49,7 +49,15 @@ A collection of **10 technical articles, 4 runnable tutorials, and 15 project ca
 | MLOps and delivery | MLflow, Terraform, Docker, GitHub Actions, Git LFS, uv, Kestra |
 | Development | pytest, Ruff, Typer, Jupyter |
 
-## Try the public examples
+## Run the public-data notebooks
+
+[**Browse all 10 notebooks and setup instructions**](notebooks/README.md)
+
+Start with [a short EuroSAT fine-tune](notebooks/01-reusable-geoai-framework.ipynb), [windowed Sentinel-2 processing](notebooks/02-memory-bounded-rasters.ipynb), [tree boxes and public height surfaces](notebooks/08-tree-crowns-height-distance.ipynb), or [observed LiDAR and fitted geometry](notebooks/10-lidar-evidence.ipynb). Saved results are visible on GitHub; CPU and NVIDIA GPU installation options are documented.
+
+[Data sources and licences](docs/DATA_SOURCES.md) accompany the versioned download packs.
+
+## Try the small synthetic examples
 
 1. [Windowed raster processing and COG output](docs/tutorials/windowed-raster-processing.md)
 2. [Preprocessing fitted only on training regions](docs/tutorials/train-only-preprocessing.md)

@@ -31,3 +31,7 @@ Bootstrap success also needs a concrete meaning. Installing a package is differe
 Reproducibility remains bounded by driver, library and hardware compatibility. Infrastructure as code makes configuration visible; it does not remove those constraints or guarantee that a provider has capacity.
 
 The public documentation excludes credentials, machine inventories, network details, costs and deployment commands. The linked articles discuss generic packaging and artifact-lifecycle principles that apply without exposing the private environment or encouraging readers to provision paid resources for the tutorials.
+
+## Independent public-data demonstration
+
+[Notebook 01: reusable geoai framework](../../notebooks/01-reusable-geoai-framework.ipynb) demonstrates related methods using public observations and original code. It does not reproduce this private project or its operational results.

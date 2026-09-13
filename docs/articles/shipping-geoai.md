@@ -1,5 +1,7 @@
 # Shipping GeoAI: From Notebooks to Containers
 
+[**Run the public-data notebook**](../../notebooks/07-shipping-geoai.ipynb) ? [Notebook setup](../../notebooks/README.md)
+
 [Documentation index](../README.md) · [Annotation tool](../projects/annotation-tool.md) · [Legacy canopy workflow](../projects/canopy-shadow-legacy.md)
 
 A notebook can explain an experiment well while still being difficult for another person to operate. Hidden state, absolute paths and manually installed libraries become problems when the same workflow must run on a new machine or recover from a failure.

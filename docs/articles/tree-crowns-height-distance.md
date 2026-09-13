@@ -1,5 +1,7 @@
 # From Tree Crowns to Height and Distance
 
+[**Run the public-data notebook**](../../notebooks/08-tree-crowns-height-distance.ipynb) ? [Notebook setup](../../notebooks/README.md)
+
 [Documentation index](../README.md) · [Tree height estimation](../projects/tree-height-estimation.md) · [Tree distance to conductors](../projects/tree-distance-conductor.md)
 
 A crown polygon, a canopy-height raster and a conductor geometry describe different aspects of the same scene. Combining them can produce useful per-tree attributes, but a join is not enough: coordinate systems, height meanings and spatial support must agree.

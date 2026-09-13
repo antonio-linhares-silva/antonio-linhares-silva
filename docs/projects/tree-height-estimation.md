@@ -31,3 +31,7 @@ A crown without usable height coverage needs an unresolved value or status. Conv
 The integration also depends on compatible coordinates, acquisition context and raster validity. Passing a file from one package to another does not by itself establish those conditions.
 
 This case study describes the integration rather than publishing operational settings or field validation results. It includes no client geometry, imagery or model artifacts. The associated article explains the choices behind raster/vector enrichment and why testing the integration is separate from measuring model accuracy against real trees.
+
+## Independent public-data demonstration
+
+[Notebook 08: tree crowns height distance](../../notebooks/08-tree-crowns-height-distance.ipynb) demonstrates related methods using public observations and original code. It does not reproduce this private project or its operational results.

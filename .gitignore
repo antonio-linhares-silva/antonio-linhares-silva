@@ -9,3 +9,9 @@ outputs/
 mlruns/
 mlflow.db
 .tools/
+data/cache/
+data/prepared/
+.ipynb_checkpoints/
+dist/
+build/
+*.egg-info/

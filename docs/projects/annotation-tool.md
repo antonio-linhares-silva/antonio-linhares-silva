@@ -31,3 +31,7 @@ Packaging needs to account for native geospatial dependencies and any assets exp
 The public case study focuses on integration and software delivery. It does not distribute annotated imagery, model weights, private prompts or application-specific settings. No segmentation-accuracy comparison is claimed.
 
 The linked article explains how a notebook workflow becomes an explicit CLI and tested artifact. The independent tutorials provide smaller examples of spatial contracts and model packaging that readers can execute without access to this private project.
+
+## Independent public-data demonstration
+
+[Notebook 08: tree crowns height distance](../../notebooks/08-tree-crowns-height-distance.ipynb) demonstrates related methods using public observations and original code. It does not reproduce this private project or its operational results.

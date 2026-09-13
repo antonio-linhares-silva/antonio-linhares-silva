@@ -1,5 +1,7 @@
 # Reproducible Multispectral Experiments
 
+[**Run the public-data notebook**](../../notebooks/05-multispectral-experiments.ipynb) ? [Notebook setup](../../notebooks/README.md)
+
 [Documentation index](../README.md) · [Feature importance project](../projects/feature-importance.md) · [GAIA](../projects/gaia.md)
 
 An experiment is reproducible when another run can reconstruct what was compared and why the comparison is meaningful. A seed and a model name are useful, but they do not identify the source imagery, feature order, training region, normalization or selection procedure.

@@ -17,7 +17,7 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.os }}
-    timeout-minutes: 15
+    timeout-minutes: 25
     env:
       MLFLOW_DISABLE_AGENT_HINT: "1"
       GIT_PYTHON_REFRESH: quiet
@@ -34,4 +34,26 @@ jobs:
       - run: uv run --frozen ruff check .
       - run: uv run --frozen ruff format --check .
       - run: uv run --frozen python scripts/check_docs.py
+      - run: uv run --frozen python scripts/check_notebooks.py
       - run: uv run --frozen pytest -q
+      - name: Execute public raster notebooks on CPU
+        run: uv run --frozen python scripts/execute_notebooks.py --select 02 03 04 09 --output-dir outputs/ci-notebooks
+
+  container:
+    name: Installed CLI in Docker (Ubuntu)
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Build frozen CPU image
+        run: docker build -t geoai-portfolio .
+      - name: Run with public fixtures and no network
+        run: |
+          mkdir -p outputs/container
+          docker run --rm --network none --user "$(id -u):$(id -g)" \
+            -v "$PWD/data/fixtures:/data:ro" -v "$PWD/outputs/container:/output" \
+            geoai-portfolio ndvi --scene /data/before.tif --scl /data/before-scl.tif \
+            --output /output/ndvi.tif --window-size 17
+          test -s outputs/container/ndvi.tif

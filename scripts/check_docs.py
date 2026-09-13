@@ -55,7 +55,11 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--diagrams-json", type=Path)
     args = parser.parse_args()
-    paths = [ROOT / "README.md", *sorted((ROOT / "docs").rglob("*.md"))]
+    paths = [
+        ROOT / "README.md",
+        ROOT / "notebooks" / "README.md",
+        *sorted((ROOT / "docs").rglob("*.md")),
+    ]
     documents = {path: inspect_markdown(path) for path in paths}
     errors: list[str] = []
     edges: dict[Path, set[Path]] = {path: set() for path in paths}

@@ -31,3 +31,7 @@ Sensor and processing compatibility must be established before the difference is
 The public article uses an invented cell-count example to explain support and aggregation. It publishes no client geometry, decision thresholds or private validation results.
 
 The project provides a useful case study in preserving meaning through a pipeline: numerical arrays become spatial products that may be viewed independently of the original computation. Clear validity states, documented fields and appropriately limited claims make those products more interpretable.
+
+## Independent public-data demonstration
+
+[Notebook 09: vegetation change](../../notebooks/09-vegetation-change.ipynb) demonstrates related methods using public observations and original code. It does not reproduce this private project or its operational results.

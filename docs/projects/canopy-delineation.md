@@ -31,3 +31,7 @@ Resume behavior also needs compatibility checks. An existing file can be incompl
 A crown polygon remains a prediction whose quality depends on imagery, preprocessing, model suitability and post-processing. Temporal review candidates are not confirmed removals. No private thresholds, benchmarks, imagery or checkpoints are published here.
 
 The public [windowed raster tutorial](../tutorials/windowed-raster-processing.md) illustrates the numerical and spatial checks behind bounded processing with a small independent example. It does not reproduce the private delineation algorithm or claim its model accuracy.
+
+## Independent public-data demonstration
+
+[Notebook 08: tree crowns height distance](../../notebooks/08-tree-crowns-height-distance.ipynb) demonstrates related methods using public observations and original code. It does not reproduce this private project or its operational results.

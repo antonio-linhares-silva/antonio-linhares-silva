@@ -31,3 +31,7 @@ Coordination also has a scope. A local sequential example and a queue coordinati
 The collection omits workflow files, integration endpoints, storage identifiers, alert destinations, resource limits and internal benchmarks. It makes no claim of distributed exactly-once delivery.
 
 The [batch recovery tutorial](../tutorials/resuming-a-batch.md) uses invented integer tasks to demonstrate interruption, verified skipping and invalidation. That small example lets readers inspect the underlying reasoning without access to private orchestration or company accounts.
+
+## Independent public-data demonstration
+
+[Notebook 03: resumable workflows](../../notebooks/03-resumable-workflows.ipynb) demonstrates related methods using public observations and original code. It does not reproduce this private project or its operational results.

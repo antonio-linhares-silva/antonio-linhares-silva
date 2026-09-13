@@ -1,5 +1,7 @@
 # Geospatial Data Contracts: Grids, Bands and NoData
 
+[**Run the public-data notebook**](../../notebooks/04-geospatial-data-contracts.ipynb) ? [Notebook setup](../../notebooks/README.md)
+
 [Documentation index](../README.md) · [Land Use Land Cover](../projects/land-use-land-cover.md) · [GAIA](../projects/gaia.md)
 
 Two arrays can have identical shapes and still describe different places. They can also describe the same place while using different band orders, units or validity conventions. A geospatial pipeline needs a data contract that carries these meanings through every transformation.
