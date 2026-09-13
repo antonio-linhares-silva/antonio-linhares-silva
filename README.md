@@ -2,113 +2,66 @@
 
 **GeoAI · Python · Machine Learning Engineering · Geospatial Software**
 
-I build software that turns satellite imagery and geospatial data into tools for vegetation monitoring and infrastructure analysis. My experience spans land-use and land-cover classification, tree-species mapping, semantic segmentation, object detection, image super-resolution, canopy height estimation, and LiDAR processing, alongside reusable Python packages and workflow automation.
+I build software that turns satellite imagery and geospatial data into tools for vegetation monitoring and infrastructure analysis. My experience includes land-cover classification, tree-species mapping, segmentation, object detection, image super-resolution, canopy-height estimation, and LiDAR processing.
 
-I enjoy connecting applied machine learning with practical software engineering: taking a workflow from a notebook to a documented CLI, handling large rasters within memory limits, and making processing reproducible and recoverable.
+I enjoy connecting applied machine learning with Python engineering: moving experiments into reusable packages, processing large rasters within memory limits, and making workflows reproducible and recoverable.
 
-[GitHub](https://github.com/antonio-linhares-silva)
+## Explore my technical portfolio
 
-## Project experience — GAIA Framework
+[**GeoAI Engineering Notes →**](docs/README.md)
 
-I co-developed **GAIA — Geo Artificial Intelligence for Applications**, a modular Python/PyTorch framework for experimenting with satellite-imagery models. It brings datasets, model configurations, training, evaluation, inference, and preprocessing into a shared structure.
+A collection of **10 technical articles, 4 runnable tutorials, and 15 project case studies**. The articles explain engineering decisions; the tutorials use original synthetic data; the case studies describe my contributions to collaborative projects.
 
-The framework covers several complementary areas:
-
-| Area | Scope and examples |
+| Start here | What it covers |
 | --- | --- |
-| **Tree-species and forest-group mapping** | Multiclass semantic segmentation with UPerNet/BEiT configurations for four-band Pleiades imagery. Dataset labels distinguish coniferous forests, a Quercus forest category, eucalyptus forests, other species, and background. |
-| **Tree-crown detection** | Object-detection workflows and RetinaNet/FCOS configurations, with dataset labels including larch and spruce alongside generic tree and other categories. |
-| **Land cover and scene classification** | LandCoverNet segmentation and an experimental EuroSAT/Swin Transformer classification workflow. |
-| **Road and agricultural segmentation** | Configurations for road/asphalt and vineyard segmentation using architectures such as U-Net, U-Net++, and UPerNet/BEiT across the framework. |
-| **Image super-resolution** | Super-resolution pipelines and EDSR, RCAN, and HAT configurations, supported by tools for creating paired high- and low-resolution datasets. |
-| **Geospatial data preparation** | Dataset adapters, raster patches, multichannel normalization and augmentation, label preparation, and patch merging. |
-| **Experiment and development tooling** | YAML-driven pipelines, checkpoint loading and training resume, hyperparameter-search scripts, results documentation, and package/build/test automation. |
+| [Reusable GeoAI frameworks](docs/articles/reusable-geoai-framework.md) | Shared interfaces across datasets, experiments, and inference |
+| [Processing rasters within memory limits](docs/articles/memory-bounded-rasters.md) | Windows, output grids, masks, and bounded intermediate arrays |
+| [Multispectral experiments](docs/articles/multispectral-experiments.md) | Train-region preprocessing, feature comparisons, and spatial validation |
+| [Model artifacts with MLflow](docs/articles/model-artifacts-mlflow.md) | Packaging, environment definitions, and independent reload checks |
+| [Recoverable workflows](docs/articles/resumable-workflows.md) | Completion records, input identity, and safe retries |
+| [Evidence in LiDAR reconstruction](docs/articles/lidar-evidence.md) | Observed points, fitted geometry, and uncertainty |
 
-**Engineering focus:** reusable components across different tasks, configurable experiments, multispectral data handling, and a consistent interface from dataset preparation to inference. GAIA is a prototype framework for applied research and experimentation.
+## Selected project experience
 
-## Featured public project — Land Use & Land Cover
+**[GAIA framework](docs/projects/gaia.md).** I co-developed a modular Python/PyTorch prototype for applied GeoAI experimentation, contributing dataset handling, multiclass compatibility fixes, geospatial postprocessing, and development automation.
 
-[**Explore land-use-land-cover →**](https://github.com/antonio-linhares-silva/land-use-land-cover)
+**[Land Use & Land Cover](docs/projects/land-use-land-cover.md).** I co-developed a Python package connecting conventional machine learning, optical and radar features, raster inference, and MLflow model management. The source repository is private; the public case study explains the engineering scope.
 
-I co-developed **landcover**, a Python package for land-use and land-cover classification. It connects geospatial data preparation, classifier training and tuning, raster inference, temporal change detection, and MLflow-based model management.
+**[Canopy delineation](docs/projects/canopy-delineation.md) and [canopy height](docs/projects/canopy-height.md).** My work includes bounded prediction merging, recovery from interruptions, model integration, reference-data validation utilities, and packaging.
 
-| Area | Scope and examples |
-| --- | --- |
-| **Land-cover classification** | Training and inference with Random Forest and other scikit-learn classifiers, plus XGBoost and LightGBM integration. |
-| **Optical and radar inputs** | Tools to combine Sentinel-2 optical imagery with Sentinel-1 SAR composites, with configurable band selection and temporal features. |
-| **CPU and GPU workflows** | Optional RAPIDS/cuML support, batched inference, and chunked GPU transfers to manage large geospatial datasets. |
-| **Tuning and feature analysis** | Hyperparameter tuning, cross-validation utilities, and permutation importance for exploring the contribution of input features. |
-| **MLOps and model reuse** | MLflow experiment tracking and model loading, a PyFunc wrapper for cuML models, compressed model artifacts, local caching, and version-specific environment definitions. |
-| **Raster outputs and change analysis** | Georeferenced classification outputs, post-processing that preserves NoData regions, and workflows for identifying changes between dates. |
+**[Tree metrics](docs/projects/tree-height-estimation.md) and [powerline reconstruction](docs/projects/powerline-reconstruction.md).** I contributed workflows connecting crown geometry, height estimates, and infrastructure features, alongside exploratory reconstruction from point clouds with explicit provenance.
 
-**Engineering focus:** connecting conventional machine learning with geospatial processing through a reusable package, command-line tools, and documented model environments.
+**[Kestra workflows](docs/projects/kestra-workflows.md).** I proposed recoverable batch queues and completion tracking in a pull request. That contribution remains under review as of 13 September 2026.
+
+[**Browse all 15 case studies →**](docs/README.md#project-case-studies)
 
 ## What I bring to a team
 
-- **Geospatial machine learning:** develop and integrate workflows for tree-species groups, land cover, tree-crown detection, super-resolution, and canopy-height estimation using PyTorch and specialist geospatial models.
-- **Python software engineering:** develop reusable packages and CLIs with automated tests, clear data contracts, logging, and release workflows.
-- **Large-image processing:** work on tiled inference, GPU batching, memory-bounded raster merging, and resumable execution.
-- **MLOps and cloud infrastructure:** contribute MLflow integration, Terraform infrastructure, Docker packaging, and GitHub Actions delivery.
-- **Workflow automation:** connect geospatial processing components through Kestra and container-based jobs.
+- **Geospatial machine learning:** integrate imagery models and conventional classifiers with geospatial data preparation and inference.
+- **Python software engineering:** develop reusable packages and CLIs with tests, data contracts, logging, and delivery workflows.
+- **Large-image processing:** work on tiled inference, GPU batching, bounded raster merging, and resumable execution.
+- **MLOps and infrastructure:** contribute MLflow integration, Terraform infrastructure, Docker packaging, and workflow orchestration.
 
-## Engineering highlights
-
-**Making canopy processing recoverable.** My contributions to canopy delineation include memory-bounded prediction merging, recovery from interrupted runs, GPU batching controls, and packaging fixes. These changes address practical failures that can prevent large imagery workflows from completing.
-
-**Connecting tree geometry with height.** I developed and extended workflows that combine crown segmentation with canopy-height estimates, enrich individual tree polygons, and calculate distances to conductor geometries.
-
-**Bringing models into repeatable workflows.** My canopy-height work includes CHMv2 integration, reference-data validation utilities, MLflow registry support, and container packaging for model assets.
-
-**Making experiments traceable.** I contributed a multispectral feature-selection pipeline with train-region normalization, permutation importance, feature-subset experiments, and configuration-based run identities.
-
-**Turning processing components into operator workflows.** My Kestra contributions include idempotent batch queues and completion tracking so interrupted batches can resume without repeating completed work.
-
-## My work at Spotlite — private project catalogue
-
-Much of my work at Spotlite lives in private company repositories. The catalogue below describes projects I have contributed to; it does not imply sole authorship of every component. The summaries focus on engineering scope and omit source code, internal data, and deployment details.
-
-### GeoAI, computer vision, and vegetation analytics
-
-| Private repository | Project scope |
+| Area | Technologies used across these projects |
 | --- | --- |
-| `spotlite-canopy-delineation` | Tree-crown segmentation from high-resolution imagery, with tiled inference, training workflows, height filtering, and temporal crown comparison. |
-| `spotlite-canopy-height` | Canopy-height estimation using pretrained models, with reference-data validation, correction utilities, tree-instance integration, and MLflow support. |
-| `spotlite-annotation-tool` | Geospatial annotation and segmentation workflows using SAM3, including image tiling, text prompts, shadow handling, and polygon export. |
-| `spotlite-feature-permutation-importance` | Multispectral segmentation experiments, permutation importance, and feature-subset comparisons through a reproducible Python pipeline. |
-| `spotlite-forest-cut-classifier` | Vegetation-change and forest-cut intensity classification from NDVI differences, with area-based analysis and geospatial exports. |
-| `shadow-detection` | Analytical shadow masks from RGB and near-infrared imagery, packaged with tiling, merging, a CLI, and automated tests. |
-| `spotlite-ml-canopyshadowheight-legacy` | A legacy tree-and-shadow workflow converted into a CLI and Docker pipeline, including tree-height outputs when suitable solar metadata is available. |
-
-### Tree metrics, LiDAR, and infrastructure analysis
-
-| Private repository | Project scope |
-| --- | --- |
-| `spotlite-tree-height-estimation` | Integration of crown delineation and canopy-height inference to attach height estimates to individual tree polygons. |
-| `spotlite-tree-distance-conductor` | Integration of tree geometry, estimated heights, and conductor features to calculate spatial distances and export enriched tree data. |
-| `spotlite-powerline-reconstruction` | Exploratory powerline reconstruction from LAS/LAZ point clouds using adaptive catenary fitting, traceable outputs, and explicit separation of observations from synthetic geometry. |
-
-### MLOps, infrastructure, and orchestration
-
-| Private repository | Project scope |
-| --- | --- |
-| `mlflow-ovh-terraform` | Infrastructure as code for MLflow experiment tracking and model-management workflows. |
-| `mltrain-ovh-terraform` | Infrastructure as code supporting reproducible GPU-accelerated model training. |
-| `spotlite-kestra-workflows` | Kestra orchestration around geospatial processing containers, including batch execution, input staging, and recoverable processing queues. |
-
-*The private repositories listed here require authorized access. This profile provides a summary of my work; it does not grant access to company code or data. Third-party models and libraries retain their original authorship.*
-
-## Technologies used across these projects
-
-| Area | Technologies |
-| --- | --- |
-| Languages and scientific computing | Python, Bash, NumPy, SciPy, pandas |
-| Machine learning and computer vision | PyTorch, torchvision, segmentation-models-pytorch, scikit-learn, XGBoost, LightGBM, RAPIDS/cuML, timm, Albumentations, DeepTrees, SAM3, CHMv2, DINOv3 |
+| Python and machine learning | NumPy, pandas, PyTorch, scikit-learn, XGBoost, LightGBM, RAPIDS/cuML |
 | Geospatial processing | GDAL, Rasterio, GeoPandas, Shapely, PyProj, laspy |
-| Data formats | Cloud-Optimized GeoTIFF, GeoPackage, GeoJSON, LAS/LAZ |
-| MLOps and infrastructure | MLflow, Terraform |
-| Packaging and delivery | Docker, GitHub Actions, GitHub Container Registry, Git LFS, uv, Hatch |
-| Developer tooling and orchestration | pytest, Ruff, Typer, Jupyter, TensorBoard, Kestra |
+| MLOps and delivery | MLflow, Terraform, Docker, GitHub Actions, Git LFS, uv, Kestra |
+| Development | pytest, Ruff, Typer, Jupyter |
 
-## Let's connect
+## Try the public examples
 
-If you're hiring for **GeoAI, geospatial software, Python engineering, or ML engineering**, I'd be happy to discuss my contributions, technical decisions, and the challenges behind these projects at a level consistent with company confidentiality.
+1. [Windowed raster processing and COG output](docs/tutorials/windowed-raster-processing.md)
+2. [Preprocessing fitted only on training regions](docs/tutorials/train-only-preprocessing.md)
+3. [Packaging and reloading a local MLflow model](docs/tutorials/local-mlflow-model.md)
+4. [Resuming a batch after an interruption](docs/tutorials/resuming-a-batch.md)
+
+The examples run locally with Python 3.12 and a locked dependency environment. They need no company data, cloud account, or credentials. See the [setup and validation instructions](docs/README.md#runnable-tutorials).
+
+## About this portfolio
+
+Most source projects are private collaborative repositories. Their case studies describe my contributions without reproducing private code, data, deployment settings, or operational results. Third-party models and libraries retain their original authorship. The public examples were written independently for this collection.
+
+If you're hiring for **GeoAI, geospatial software, Python engineering, or ML engineering**, I'd be happy to discuss the technical decisions behind this work.
+
+[GitHub profile](https://github.com/antonio-linhares-silva)
